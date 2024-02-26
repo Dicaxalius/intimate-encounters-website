@@ -167,4 +167,12 @@ body:hover::before {
 .profile-card h3, .profile-card p {
     margin: 10px;
 }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures particles are behind your content */
+  top: 0;
+  left: 0;
+}
 
