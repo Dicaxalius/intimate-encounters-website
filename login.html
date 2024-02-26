@@ -22,14 +22,20 @@
     <main>
         <section class="form-section">
             <h2>Login to Your Account</h2>
-            <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+            <form id="login-form" class="form-animate">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                    <span class="error-message">Username required</span>
+                </div>
                 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <span class="error-message">Password required</span>
+                </div>
                 
-                <button type="submit">Login</button>
+                <button type="submit" class="form-submit">Login</button>
             </form>
         </section>
     </main>
