@@ -61,3 +61,70 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Form Animation & Styles */
+.form-animate .form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.form-submit {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-submit:hover {
+    background: #0056b3;
+}
+
+.error-message {
+    display: none;
+    color: #dc3545;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 100%;
+    left: 0;
+}
+
+.form-group.invalid .form-control {
+    border-color: #dc3545;
+}
+
+.form-group.invalid .error-message {
+    display: block;
+}
+
+/* Interactive Background */
+body {
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    z-index: -1;
+    transition: background-position 0.5s;
+}
+
+body:hover::before {
+    background-position: 100% 0;
+}
+
