@@ -14,4 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+// Add this code to your existing script.js file
+document.querySelectorAll('.profile-card').forEach(card => {
+    card.addEventListener('click', function() {
+        window.location.href = this.getAttribute('onclick').replace("location.href='", "").slice(0, -2);
+    });
+});
 
